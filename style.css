@@ -1,0 +1,301 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Layout */
+header, section, footer {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.cta-button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+.cta-button:hover {
+  background-color: #005fa3;
+}
+
+
+/* Headings */
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+li {
+  margin-bottom: 10px;
+}
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.projects, .services, .pricing, .contact {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  header, section, footer {
+    padding: 20px 10px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 1em;
+  }
+}
+.testimonials blockquote {
+  font-style: italic;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #0077cc;
+  margin: 20px 0;
+}
+.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+.dark-mode a {
+  color: #66ccff;
+}
+
+.hero {
+  background-image: url(hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+.skills .skill {
+  margin-bottom: 20px;
+}
+.bar {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #0077cc;
+  animation: grow 2s ease-out forwards;
+}
+.bar.html::after { width: 90%; }
+.bar.css::after { width: 85%; }
+.bar.js::after { width: 75%; }
+
+@keyframes grow {
+  from { width: 0; }
+  to { width: inherit; }
+}
+.client-logos img {
+  height: 60px;
+  margin: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.client-logos img:hover {
+  filter: grayscale(0%);
+}
+.whatsapp-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.closing-banner {
+  background-image: url(david-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+.closing-banner h2 {
+  font-size: 2.5em;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.closing-banner h2 {
+  animation: fadeUp 2s ease-out;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-grid a {
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.project-grid p {
+  padding: 10px;
+  font-weight: 500;
+}
+.project-grid a:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border: 2px solid #0077cc;
+  transition: all 0.3s ease;
+}
+.project-grid a:hover {
+  background-color: #f0f8ff;
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-grid a {
+    height: auto;
+  }
+ .project-grid img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+}
+
+section {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+section:nth-child(odd) {
+  background-color: #ffffff;
+}
+.skills .skill {
+  margin-bottom: 20px;
+}
+.skills p span {
+  font-size: 0.9em;
+  color: #666;
+}
+.bar {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #0077cc;
+  animation: grow 2s ease-out forwards;
+}
+.bar.html::after { width: 90%; }
+.bar.css::after { width: 85%; }
+.bar.js::after { width: 75%; }
+.pricing-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+.card h3 {
+  margin-bottom: 10px;
+}
+.card strong {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #0077cc;
+}
