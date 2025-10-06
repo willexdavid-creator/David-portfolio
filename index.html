@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Willex — Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="David Willex — Professional Web Developer Portfolio. Explore live projects, services, and global pricing.">
+<meta name="keywords" content="web developer, portfolio, freelance, Ghana, global, responsive design, registration forms">
+<meta name="author" content="David Willex">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="David Willex — Web Developer Portfolio">
+<meta property="og:description" content="Explore live projects, services, and global pricing.">
+<meta property="og:image" content="https://willexdavid-creator.github.io/David-portfolio/preview.png">
+<meta property="og:url" content="https://willexdavid-creator.github.io/David-portfolio/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+ <header class="hero">
+  <div class="overlay">
+    <h1>David Willex</h1>
+    <p class="tagline">Creative Web Developer | Front-End Specialist | Digital Experience Architect</p>
+    <p>I build websites that don’t just look good — they perform, convert, elevate brands, and stand out Globally</p>
+    <a href="#projects" class="cta-button">View My Work</a>
+  </div>
+</header>
+
+
+  <section class="projects" id="projects">
+  <h2>🌟 Featured Projects</h2>
+  <div class="project-grid">
+    <a href="https://willexdavid-creator.github.io/angelgina-enterprise/" target="_blank">
+      <img src="angelgina.png" alt="Angel Gina Enterprise">
+      <p>Business site with live form integration</p>
+    </a>
+    <a href="https://willexdavid-creator.github.io/brightpath-registration-form/" target="_blank">
+      <img src="brightpath.png" alt="BrightPath Registration Form">
+      <p>Clean form with email delivery</p>
+    </a>
+    <a href="https://willexdavid-creator.github.io/frontend-form-project/" target="_blank">
+      <img src="frontendform.png" alt="Frontend Form Project">
+      <p>Functional form using FormSubmit</p>
+    </a>
+  </div>
+</section>
+
+
+  <section class="services">
+    <h2>🛠️ What I Do</h2>
+    <ul>
+      <li>Business & Personal Websites</li>
+      <li>Landing Pages & Portfolios</li>
+      <li>Registration & Contact Forms</li>
+      <li>Responsive Design & Mobile Optimization</li>
+      <li>Email Integration & Form Handling</li>
+    </ul>
+    <p>Every project is built with clean code, fast performance, and a focus on user experience.</p>
+  </section>
+
+  <section class="pricing">
+    <h2>💰 Global Pricing</h2>
+    <p>Starting at:</p>
+    <ul>
+      <li><strong>$50 USD</strong> — International</li>
+      <li><strong>₵600 GHS</strong> — Ghana</li>
+      <li><strong>₦60,000 NGN</strong> — Nigeria</li>
+      <li><strong>€45 EUR</strong> — Europe</li>
+      <li><strong>£40 GBP</strong> — UK</li>
+    </ul>
+    <p>Custom quotes available for larger projects. Currency conversion handled smoothly — just tell me your location.</p>
+  </section>
+  <section class="pricing-calculator">
+  <h2>🌍 Global Pricing</h2>
+  <label for="country">Select your country:</label>
+  <select id="country">
+    <option value="USD">USA</option>
+    <option value="GHS">Ghana</option>
+    <option value="NGN">Nigeria</option>
+    <option value="EUR">Europe</option>
+    <option value="GBP">UK</option>
+  </select>
+  <p id="price-output">Starting price: $50 USD</p>
+</section>
+
+<section class="skills">
+  <h2>🧠 My Skills</h2>
+  <div class="skill">
+    <p>HTML <span>Used in 5+ live projects</span></p>
+    <div class="bar html"></div>
+  </div>
+  <div class="skill">
+    <p>CSS <span>Optimized for mobile-first design</span></p>
+    <div class="bar css"></div>
+  </div>
+  <div class="skill">
+    <p>JavaScript <span>Integrated with FormSubmit</span></p>
+    <div class="bar js"></div>
+  </div>
+</section>
+
+<section class="clients">
+  <h2>🤝 Trusted By</h2>
+  <div class="client-logos">
+    <img src="clients.png" alt="Angel Gina Enterprise">
+    <!-- Add more logos as needed -->
+  </div>
+</section>
+
+  <section class="contact">
+    <h2>📲 Let’s Work Together</h2>
+    <p>WhatsApp: +233265456820</p>
+    <p>Email: willexdavid@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/willexdavid-creator" target="_blank">willexdavid-creator</a></p>
+    <p>Ready to build something amazing? Let’s talk.</p>
+  </section>
+  <form action="https://formsubmit.co/willexdavid@gmail.com" method="POST">
+  <input type="text" name="name" required placeholder="Your Name">
+  <input type="email" name="email" required placeholder="Your Email">
+  <select name="project">
+    <option value="Website">Website</option>
+    <option value="Form">Form</option>
+    <option value="Landing Page">Landing Page</option>
+  </select>
+  <input type="hidden" name="_autoresponse" value="Thanks for reaching out! David will reply within 24 hours.">
+  <button type="submit">Send Message</button>
+</form>
+
+<section class="testimonials">
+  <h2>💬 What People Say</h2>
+  <div class="carousel">
+    <img id="testimonial-img" src="angelgina.jpg" alt="Client Photo">
+    <p id="testimonial">“David delivered our site fast and professionally.” — Angel Gina</p>
+  </div>
+</section>
+
+<section class="closing-banner">
+  <h2>Let’s Build Something Legendary Together</h2>
+</section>
+
+<p><a href="cv.pdf" download>📄 Download My CV</a></p>
+
+  <footer>
+    <p>&copy; 2025 David Willex. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <a href="https://wa.me/233265456820?text=Hi%20David%2C%20I%27m%20interested%20in%20your%20services" class="whatsapp-chat" target="_blank">💬 Chat on WhatsApp</a>
+</body>
+</html>
